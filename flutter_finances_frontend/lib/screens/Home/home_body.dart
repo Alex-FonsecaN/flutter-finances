@@ -58,7 +58,7 @@ class _HomeBodyState extends State<HomeBody> {
                       Expanded(
                         child: TextField(
                           decoration: const InputDecoration(
-                            labelText: 'Texto',
+                            labelText: 'Gasto',
                             border: OutlineInputBorder(),
                           ),
                         ),
@@ -68,7 +68,7 @@ class _HomeBodyState extends State<HomeBody> {
                       Expanded(
                         child: TextField(
                           decoration: const InputDecoration(
-                            labelText: 'Número',
+                            labelText: 'Valor',
                             border: OutlineInputBorder(),
                           ),
                           keyboardType: TextInputType.number,

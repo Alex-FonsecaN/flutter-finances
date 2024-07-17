@@ -28,7 +28,8 @@ class _HomeUpperState extends State<HomeUpper> {
                 Padding(
                   padding: const EdgeInsets.only(right: 8.0),
                   child: DropdownButton<String>(
-                    hint: const Text('ANO'),
+                    dropdownColor: Colors.black,
+                    hint: const Text('ANO', style: TextStyle(color: Colors.white),),
                     value: _selectedYear,
                     onChanged: (String? newValue) {
                       setState(() {
@@ -38,7 +39,7 @@ class _HomeUpperState extends State<HomeUpper> {
                     items: _years.map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text(value),
+                        child: Text(value, style: TextStyle(color: Colors.white),),
                       );
                     }).toList(),
                   )
@@ -46,7 +47,8 @@ class _HomeUpperState extends State<HomeUpper> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: DropdownButton<String>(
-                    hint: const Text('MÊS'),
+                    dropdownColor: Colors.black,
+                    hint: const Text('MÊS', style: TextStyle(color: Colors.white)),
                     value: _selectedMonth,
                     onChanged: (String? newValue) {
                       setState(() {
@@ -56,7 +58,7 @@ class _HomeUpperState extends State<HomeUpper> {
                     items: _months.map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text(value),
+                        child: Text(value, style: TextStyle(color: Colors.white)),
                         );
                     }).toList(),
                   )

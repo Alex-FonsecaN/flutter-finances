@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\finances_backend.props" />
+</Project>
